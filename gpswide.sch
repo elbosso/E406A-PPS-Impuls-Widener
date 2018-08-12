@@ -318,96 +318,96 @@ F 3 "" H 8200 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 2200 8200 1650
-Wire Wire Line
-	8200 2500 8200 3350
-Wire Wire Line
 	4200 1650 4200 2400
 Wire Wire Line
 	4200 2700 4200 3350
-Connection ~ 7800 2400
-Wire Wire Line
-	4500 2500 4500 1700
-Wire Wire Line
-	4500 1700 8000 1700
-Wire Wire Line
-	8000 1700 8000 2300
 $Comp
 L Connector:Conn_01x08_Male J1
 U 1 1 5B705252
-P 3450 2900
-F 0 "J1" H 3556 3378 50  0000 C CNN
-F 1 "GPS E406A" H 3556 3287 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3450 2900 50  0001 C CNN
-F 3 "~" H 3450 2900 50  0001 C CNN
-	1    3450 2900
+P 4350 5200
+F 0 "J1" H 4456 5678 50  0000 C CNN
+F 1 "GPS E406A" H 4456 5587 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4350 5200 50  0001 C CNN
+F 3 "~" H 4350 5200 50  0001 C CNN
+	1    4350 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 2600 4550 2600
-Wire Wire Line
-	4000 2500 4000 2800
-Wire Wire Line
-	4000 2800 3650 2800
-Wire Wire Line
-	4000 2500 4500 2500
-Wire Wire Line
-	4200 2400 3900 2400
-Wire Wire Line
-	3900 2400 3900 3000
-Wire Wire Line
-	3900 3000 3650 3000
-Wire Wire Line
-	4200 2700 4100 2700
-Wire Wire Line
-	4100 2700 4100 3100
-Wire Wire Line
-	4100 3100 3650 3100
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J2
 U 1 1 5B7079DD
-P 9000 2500
-F 0 "J2" H 9050 3017 50  0000 C CNN
-F 1 "Raspberry Pi" H 9050 2926 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 9000 2500 50  0001 C CNN
-F 3 "~" H 9000 2500 50  0001 C CNN
-	1    9000 2500
+P 6850 5200
+F 0 "J2" H 6900 5717 50  0000 C CNN
+F 1 "Raspberry Pi" H 6900 5626 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 6850 5200 50  0001 C CNN
+F 3 "~" H 6850 5200 50  0001 C CNN
+	1    6850 5200
 	1    0    0    -1  
 $EndComp
+Text GLabel 3950 2400 0    50   Output ~ 0
+GPS_VCC
+Text GLabel 3950 2700 0    50   Output ~ 0
+GPX_GND
+Text GLabel 3950 2600 0    50   Input ~ 0
+GPS_PPS
+Text GLabel 3950 2500 0    50   Input ~ 0
+GPS_TX
+Text GLabel 4700 5300 2    50   Output ~ 0
+GPS_VCC
+Text GLabel 4700 5400 2    50   Output ~ 0
+GPS_GND
+Text GLabel 4700 4900 2    50   Input ~ 0
+GPS_PPS
+Text GLabel 4700 5100 2    50   Input ~ 0
+GPS_TX
 Wire Wire Line
-	8200 2200 8350 2200
+	4550 4900 4700 4900
 Wire Wire Line
-	8350 2200 8350 1850
+	4550 5100 4700 5100
 Wire Wire Line
-	8350 1850 9550 1850
+	4550 5300 4700 5300
 Wire Wire Line
-	9550 1850 9550 2300
+	4200 2400 3950 2400
 Wire Wire Line
-	9550 2300 9300 2300
+	4550 2600 3950 2600
 Wire Wire Line
-	8200 2500 8550 2500
+	3950 2700 4200 2700
 Wire Wire Line
-	8550 2500 8550 3100
+	4550 5400 4700 5400
+Text GLabel 7350 5100 2    50   Input ~ 0
+RPI_GND
+Text GLabel 7350 5300 2    50   Output ~ 0
+RPI_RX
+Text GLabel 7350 5000 2    50   Input ~ 0
+RPI_VCC
+Text GLabel 6450 5200 0    50   Output ~ 0
+RPI_PPS
 Wire Wire Line
-	8550 3100 9550 3100
+	6450 5200 6650 5200
 Wire Wire Line
-	9550 3100 9550 2400
+	7150 5000 7350 5000
 Wire Wire Line
-	9550 2400 9300 2400
+	7150 5100 7350 5100
 Wire Wire Line
-	8550 2300 8550 1900
+	7150 5300 7350 5300
+Text GLabel 4200 2500 2    50   Input ~ 0
+RPI_RX
 Wire Wire Line
-	8550 1900 9650 1900
+	3950 2500 4200 2500
+Text GLabel 8450 1800 2    50   Output ~ 0
+RPI_VCC
+Text GLabel 8450 3200 2    50   Output ~ 0
+RPI_GND
+Text GLabel 8450 2400 2    50   Output ~ 0
+RPI_PPS
 Wire Wire Line
-	9650 1900 9650 2600
+	8450 1800 8200 1800
 Wire Wire Line
-	9650 2600 9300 2600
+	8200 1800 8200 1650
 Wire Wire Line
-	8000 2300 8550 2300
+	8450 3200 8200 3200
 Wire Wire Line
-	8700 2400 8700 2500
+	8200 3200 8200 3350
 Wire Wire Line
-	8700 2500 8800 2500
-Wire Wire Line
-	7800 2400 8700 2400
+	8450 2400 7800 2400
+Connection ~ 7800 2400
 $EndSCHEMATC
