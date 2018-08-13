@@ -274,28 +274,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 6550 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
-U 1 1 5B7223D5
-P 8200 3350
-F 0 "#PWR0109" H 8200 3100 50  0001 C CNN
-F 1 "GND" H 8205 3177 50  0000 C CNN
-F 2 "" H 8200 3350 50  0001 C CNN
-F 3 "" H 8200 3350 50  0001 C CNN
-	1    8200 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5B72246F
-P 4200 3350
-F 0 "#PWR0110" H 4200 3100 50  0001 C CNN
-F 1 "GND" H 4205 3177 50  0000 C CNN
-F 2 "" H 4200 3350 50  0001 C CNN
-F 3 "" H 4200 3350 50  0001 C CNN
-	1    4200 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0111
 U 1 1 5B7224E0
 P 4200 1650
@@ -319,8 +297,6 @@ F 3 "" H 8200 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 1650 4200 2400
-Wire Wire Line
-	4200 2700 4200 3350
 $Comp
 L Connector:Conn_01x08_Male J1
 U 1 1 5B705252
@@ -345,16 +321,12 @@ F 3 "~" H 6850 5200 50  0001 C CNN
 $EndComp
 Text GLabel 3950 2400 0    50   Output ~ 0
 GPS_VCC
-Text GLabel 3950 2700 0    50   Output ~ 0
-GPX_GND
 Text GLabel 3950 2600 0    50   Input ~ 0
 GPS_PPS
 Text GLabel 3950 2500 0    50   Input ~ 0
 GPS_TX
 Text GLabel 4700 5300 2    50   Output ~ 0
 GPS_VCC
-Text GLabel 4700 5400 2    50   Output ~ 0
-GPS_GND
 Text GLabel 4700 4900 2    50   Input ~ 0
 GPS_PPS
 Text GLabel 4700 5100 2    50   Input ~ 0
@@ -370,11 +342,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 2600 3950 2600
 Wire Wire Line
-	3950 2700 4200 2700
-Wire Wire Line
 	4550 5400 4700 5400
-Text GLabel 7350 5100 2    50   Input ~ 0
-RPI_GND
 Text GLabel 7350 5300 2    50   Output ~ 0
 RPI_RX
 Text GLabel 7350 5000 2    50   Input ~ 0
@@ -386,8 +354,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 5000 7350 5000
 Wire Wire Line
-	7150 5100 7350 5100
-Wire Wire Line
 	7150 5300 7350 5300
 Text GLabel 4200 2500 2    50   Input ~ 0
 RPI_RX
@@ -395,8 +361,6 @@ Wire Wire Line
 	3950 2500 4200 2500
 Text GLabel 8450 1800 2    50   Output ~ 0
 RPI_VCC
-Text GLabel 8450 3200 2    50   Output ~ 0
-RPI_GND
 Text GLabel 8450 2400 2    50   Output ~ 0
 RPI_PPS
 Wire Wire Line
@@ -404,10 +368,34 @@ Wire Wire Line
 Wire Wire Line
 	8200 1800 8200 1650
 Wire Wire Line
-	8450 3200 8200 3200
-Wire Wire Line
-	8200 3200 8200 3350
-Wire Wire Line
 	8450 2400 7800 2400
 Connection ~ 7800 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5B71BD00
+P 4700 5950
+F 0 "#PWR?" H 4700 5700 50  0001 C CNN
+F 1 "GND" H 4705 5777 50  0000 C CNN
+F 2 "" H 4700 5950 50  0001 C CNN
+F 3 "" H 4700 5950 50  0001 C CNN
+	1    4700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B71BD46
+P 7750 6000
+F 0 "#PWR?" H 7750 5750 50  0001 C CNN
+F 1 "GND" H 7755 5827 50  0000 C CNN
+F 2 "" H 7750 6000 50  0001 C CNN
+F 3 "" H 7750 6000 50  0001 C CNN
+	1    7750 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5100 7750 5100
+Wire Wire Line
+	7750 5100 7750 6000
+Wire Wire Line
+	4700 5400 4700 5950
 $EndSCHEMATC
