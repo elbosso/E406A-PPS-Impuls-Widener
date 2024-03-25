@@ -17,7 +17,7 @@ This is a project i needed for building my own stratum-0-NTP server using a Rasp
 
 So, i tried what i could with an NE555 - it detects the PPS and i used it to make it to last for approximately 0.3 seconds. The led really is only for people who like blinkenlights, the transistor is there because the NE555 starts with a falling sinal on trig - because the PPS from the E406A is rising I needed a simple inverter.
 
-# My first pcb with automaitc image generation
+# Images of the PCB (images created automatically with GitHub actions provided by [kicad render action](https://github.com/linalinn/kicad-render?tab=readme-ov-file))
 
 ### Images
 ![top](https://elbosso.github.io/E406A-PPS-Impuls-Widener/top.png)
