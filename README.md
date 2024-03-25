@@ -20,5 +20,5 @@ So, i tried what i could with an NE555 - it detects the PPS and i used it to mak
 # My first pcb with automaitc image generation
 
 ### Images
-![top](elbosso.github.io/E406A-PPS-Impuls-Widener/top.png)
-![bottom](elbosso.github.io/E406A-PPS-Impuls-Widener/bottom.png)
+![top](https://elbosso.github.io/E406A-PPS-Impuls-Widener/top.png)
+![bottom](https://elbosso.github.io/E406A-PPS-Impuls-Widener/bottom.png)
